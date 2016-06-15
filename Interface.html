@@ -112,7 +112,7 @@ function loadMap(url,id) {
     });
     streets.addTo(mapBig);
 
-    var base_url = "http://0.0.0.0:10000/Data_OpenBounds/"; // <<<<< THIS URL NEEDS TO BE CHANGED WHEN ON THE SERVER 
+    var base_url = "";
     var catalog = base_url + "catalog.geojson"; 
     loadJSON(catalog, function(response){
         var i = 0; 
