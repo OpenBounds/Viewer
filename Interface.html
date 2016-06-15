@@ -106,7 +106,7 @@ function loadMap(url,id) {
     var mapBig = L.map('map').setView([38,-100],5); 
     var layers = {};
     var streets =  L.tileLayer(baselayer, {
-            attribution: 'Map data &copy <a href="http://openstreetmap.org">OpenStreetMap</a> contributors',
+            attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors',
             maxZoom: 17,
             zIndex:0
     });
@@ -136,7 +136,7 @@ function loadMap(url,id) {
                 var El = document.getElementById(divMap.id); 
                 var map = L.map(El,{attributionControl: false}); 
                 var streets =  L.tileLayer(baselayer, {
-                    attribution: 'Map data &copy <a href="http://openstreetmap.org">OpenStreetMap</a> contributors',
+                    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors',
                     maxZoom: 17,
                     zIndex:0
                 });
