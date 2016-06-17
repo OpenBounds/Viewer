@@ -44,7 +44,7 @@ function onProgress(event){
 function loadMap(url,identity) {
   var status = document.getElementById('button_' + String(identity)).value; 
   identifier = identity; 
-  if (status == false){
+  if (status == false && document.getElementById('progress_' + String(identity)) == null){
     // Creation of a new container child for the progress bar 
     var DivProgressBar = document.createElement("div"); 
     DivProgressBar.id = 'progress_' + String(identity);
